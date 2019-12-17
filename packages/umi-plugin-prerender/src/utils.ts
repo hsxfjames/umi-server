@@ -5,8 +5,7 @@ export const removeSuffixHtml = (path: string): string =>
   path
     .replace('?', '')
     .replace('(', '')
-    .replace(')', '')
-    .replace(/\.(html|htm)/g, '');
+    .replace(')', '');
 
 const isHtmlPath = (path: string): boolean => /\.(html|htm)/g.test(path);
 
